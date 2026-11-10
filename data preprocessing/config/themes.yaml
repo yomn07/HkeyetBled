@@ -1,0 +1,50 @@
+# Thèmes du corpus Hkeyet Bled + mots-clés (FR/EN, AR).
+# Les mots-clés latins sont des PRÉFIXES de mot (insensibles aux accents) ;
+# entre guillemets avec une espace finale ("plat ") = mot entier uniquement.
+#   "archeolog" couvre archéologie, archéologique, archaeology...
+# Les mots-clés arabes sont recherchés comme sous-chaînes.
+
+patrimoine_archeologique:
+  label: Sites archéologiques et Antiquité
+  latin: [archeolog, archaeolog, ruine, ruins, vestige, romain, roman, punique, punic, carthaginois, carthaginian, amphitheatre, amphitheater, thermes, mosaique, mosaic, capitole, capitol, forum, antique, antiquite, antiquity, numide, numidian, byzantin, byzantine, berbere, libyque, necropole, necropolis, mausolee, temple, colonie romaine, unesco, patrimoine mondial, world heritage]
+  arabic: [أثري, آثار, اثار, روماني, رومانية, بوني, بونية, قرطاجي, فسيفساء, المسرح الأثري, معبد, نوميدي, بيزنطي, التراث العالمي, يونسكو, اليونسكو]
+
+architecture_medinas:
+  label: Médinas, monuments et architecture
+  latin: [medina, mosquee, mosque, ribat, kasbah, casbah, souk, palais, palace, zaouia, zawiya, minaret, ksar, ksour, rempart, fortifi, forteresse, fortress, borj, synagogue, eglise, church, cathedral, architect, troglodyt, ghorfa, "dar ", tourbet, medersa, madrasa, coupole, dome, "bab "]
+  arabic: [المدينة العتيقة, جامع, مسجد, رباط, قصبة, سوق, أسواق, قصر, قصور, زاوية, ضريح, صومعة, مئذنة, سور, برج, كنيس, كنيسة, معمار, عمارة, مدرسة, قبة, باب, غرفة]
+
+artisanat:
+  label: Artisanat et savoir-faire
+  latin: [artisan, craft, poterie, pottery, potier, ceramique, ceramic, faience, tissage, weaving, tisserand, tapis, carpet, "rug ", "rugs ", mergoum, kilim, chechia, broderie, embroider, bijou, jewel, orfevr, cuivre, copper, dinander, vannerie, basket, alfa, cuir, leather, sculpt, verre souffle, savoir-faire, know-how, metier, loom, fouta, khomsa, ferronnerie]
+  arabic: [الحرف, حرفي, الصناعات التقليدية, صناعة تقليدية, فخار, الفخار, خزف, نسيج, نساج, زربية, زرابي, مرقوم, كليم, شاشية, الشاشية, تطريز, حلي, مصوغ, نحاس, سعف, حلفاء, جلد, فوطة, منسج]
+
+gastronomie:
+  label: Gastronomie et produits du terroir
+  latin: [cuisine, culinar, "plat ", "plats ", dish, recette, recipe, couscous, harissa, brik, epice, spice, huile d'olive, olive oil, olive, datte, date palm, deglet, patisser, pastry, makroud, lablabi, ojja, mloukhia, mloukhiya, chakchouka, mechouia, assida, bsissa, kafteji, fricasse, tajine, merguez, poisson, seafood, gastronom, saveur, "mets ", boukha, the a la menthe, mint tea, pain tabouna, tabouna, figue de barbarie, grenade, pomegranate]
+  arabic: [مطبخ, المطبخ, أكلة, أكلات, طبق, أطباق, كسكسي, كسكس, هريسة, الهريسة, بريك, توابل, بهارات, زيت الزيتون, زيتون, تمر, دقلة, حلويات, مقروض, لبلابي, عجة, ملوخية, شكشوكة, مشوية, عصيدة, بسيسة, كفتاجي, فريكاسي, طاجين, مرقاز, طابونة, الهندي, رمان]
+
+coutumes_fetes:
+  label: Coutumes, fêtes et traditions
+  latin: [tradition, coutume, "custom ", "customs ", fete, feast, festival, mariage, wedding, henne, henna, rite, ritual, pelerinage, pilgrimage, mouled, mawlid, "aid ", "eid ", ramadan, achoura, costume, vetement, clothing, garment, jebba, safsari, sefsari, keswa, folklore, legende, legend, conte, "tale ", "tales ", croyance, belief, superstition, ceremonie, ceremony, circoncision, saint patron, marabout, hospitalit, "oral ", kharja]
+  arabic: [عادات, عادة, تقاليد, تقليد, عيد, الأعياد, مهرجان, عرس, أعراس, زواج, حناء, الحنة, طقوس, زيارة, موسم, المولد, رمضان, عاشوراء, لباس تقليدي, اللباس التقليدي, جبة, سفساري, كسوة, فلكلور, أسطورة, حكاية, خرافة, معتقد, ولي صالح, الأولياء, الخرجة, ضيافة]
+
+musique_arts:
+  label: Musique, danse et arts
+  latin: [musique, music, malouf, maalouf, stambali, mezoued, mizwad, "chant ", "chants ", song, singer, chanteu, danse, dance, instrument, darbouka, derbouka, luth, "oud ", rbab, rebab, bendir, zokra, poesie, poetry, poete, poet, cinema, theatre, theater, peinture, painting, peintre, calligraph, rachidia, orchestre, orchestra, fdawi]
+  arabic: [موسيقى, الموسيقى, مالوف, المالوف, سطمبالي, مزود, المزود, غناء, أغنية, مطرب, رقص, عود, ربابة, بندير, زكرة, شعر, شاعر, سينما, مسرح, رسم, خط عربي, الرشيدية, فداوي]
+
+nature_paysages:
+  label: Nature, oasis et paysages
+  latin: [oasis, desert, sahara, chott, dune, "erg ", montagne, mountain, djebel, jebel, parc national, national park, "ile ", "iles ", island, archipel, archipelago, plage, beach, palmeraie, palm grove, "lac ", lake, lagune, lagoon, foret, forest, gorge, canyon, cascade, waterfall, randonnee, hiking, biodiversit, faune, flore, wetland, ramsar, source thermale, hot spring]
+  arabic: [واحة, واحات, صحراء, الصحراء, شط, كثبان, جبل, جبال, حديقة وطنية, منتزه وطني, جزيرة, أرخبيل, شاطئ, بحيرة, غابة, غابات, مضيق, شلال, عين حارة, حمامات معدنية]
+
+histoire:
+  label: Histoire et civilisations
+  latin: [histoire, history, historique, historic, dynastie, dynasty, empire, conquete, conquest, hafside, hafsid, aghlabide, aghlabid, fatimide, fatimid, ziride, zirid, ottoman, husseinite, husainid, beylical, "bey ", beylik, protectorat, protectorate, independance, independence, siecle, century, phenicien, phoenician, andalou, andalusian, morisque, morisco, hannibal]
+  arabic: [تاريخ, التاريخ, تاريخي, سلالة, الدولة, إمبراطورية, فتح, الحفصيين, الحفصية, الأغالبة, الأغلبية, الفاطميين, الفاطمية, الزيريين, العثماني, العثمانية, الحسينيين, البايات, الباي, الحماية, الاستعمار, الاستقلال, القرن, الفينيقيين, الأندلس, الأندلسيين, حنبعل]
+
+langue_savoir_vivre:
+  label: Langue, expressions et savoir-vivre
+  latin: [dialecte, dialect, darija, derja, "arabe tunisien", "tunisian arabic", expression, proverbe, proverb, dicton, saying, salutation, greeting, politesse, etiquette, savoir vivre, hospitalit, marchand, bargain, haggl, pourboire, tipping, tenue vestimentaire, dress code, hammam, phrasebook, "guide de conversation", vocabulaire, vocabulary, "respect "]
+  arabic: [لهجة, اللهجة التونسية, الدارجة, دارجة, مثل شعبي, أمثال شعبية, أمثال, عبارة, عبارات, تحية, التحية, ضيافة, آداب, حمام, مساومة]

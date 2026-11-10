@@ -1,0 +1,9 @@
+{
+  "n_raw": 1735,
+  "n_final": 1163,
+  "n_rejected": 572,
+  "n_dups": 2,
+  "n_boilerplate_lines": 341,
+  "strip_diacritics": true,
+  "dedup_threshold": 0.8
+}

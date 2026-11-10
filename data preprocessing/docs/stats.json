@@ -1,0 +1,68 @@
+{
+  "n_docs": 1163,
+  "n_words": 1137601,
+  "by_lang": {
+    "ar": 229,
+    "en": 243,
+    "fr": 691
+  },
+  "by_theme": {
+    "architecture_medinas": 310,
+    "patrimoine_archeologique": 248,
+    "gastronomie": 173,
+    "nature_paysages": 144,
+    "histoire": 108,
+    "coutumes_fetes": 78,
+    "musique_arts": 49,
+    "artisanat": 34,
+    "langue_savoir_vivre": 19
+  },
+  "by_region": {
+    "Ariana": 8,
+    "Beja": 40,
+    "Ben Arous": 16,
+    "Bizerte": 37,
+    "Gabes": 30,
+    "Gafsa": 21,
+    "Jendouba": 35,
+    "Kairouan": 51,
+    "Kasserine": 26,
+    "Kebili": 25,
+    "Le Kef": 13,
+    "Mahdia": 30,
+    "Manouba": 13,
+    "Medenine": 54,
+    "Monastir": 34,
+    "Nabeul": 49,
+    "National": 313,
+    "Sfax": 35,
+    "Sidi Bouzid": 12,
+    "Siliana": 22,
+    "Sousse": 35,
+    "Tataouine": 69,
+    "Tozeur": 27,
+    "Tunis": 143,
+    "Zaghouan": 25
+  },
+  "by_source": {
+    "blogs": 13,
+    "inp": 2,
+    "ontt": 4,
+    "unesco_whc": 9,
+    "wikipedia": 1089,
+    "wikivoyage": 46
+  },
+  "rejected": {
+    "exclu manuellement": 1,
+    "trop court": 444,
+    "doublon copie partielle": 2,
+    "hors sujet": 125
+  },
+  "n_raw": 1735,
+  "n_final": 1163,
+  "n_rejected": 572,
+  "n_dups": 2,
+  "n_boilerplate_lines": 341,
+  "strip_diacritics": true,
+  "dedup_threshold": 0.8
+}

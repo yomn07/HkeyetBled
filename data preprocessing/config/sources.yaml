@@ -1,0 +1,390 @@
+# =====================================================================
+# Sources du corpus Hkeyet Bled (Lot 1)
+# Chaque source déclare sa licence et si son texte peut être redistribué.
+#  - redistributable: true  -> le texte complet va dans corpus_public.jsonl
+#  - redistributable: false -> on garde le texte pour l'index local (usage
+#    pédagogique, avec citation) mais on ne livre publiquement que les liens.
+# =====================================================================
+
+http:
+  # Wikimedia exige un User-Agent identifiable avec un contact.
+  # >>> Remplacez l'adresse par celle de l'équipe avant de lancer la collecte.
+  user_agent: "HkeyetBledRAG/1.0 (projet etudiant NLP; contact: votre.email@exemple.tn) python-requests"
+  delay_seconds: 1.0        # pause entre deux requêtes vers un même site
+  timeout: 30
+  max_retries: 3
+
+# ---------------------------------------------------------------------
+# 1) Wikipédia (FR comme pivot ; AR et EN récupérés via les liens interlangues)
+# ---------------------------------------------------------------------
+wikipedia:
+  license: "CC BY-SA 4.0"
+  redistributable: true
+  source_type: encyclopedie
+  pivot_lang: fr
+  follow_langlinks: [ar, en]          # versions AR/EN des articles FR
+  max_per_category: 60                # plafond par catégorie (évite les dérives)
+
+  # Indice de thème = aide à l'annotation (le thème final est recalculé sur le texte)
+  seeds:
+    patrimoine_archeologique:
+      - Carthage
+      - Site archéologique de Carthage
+      - Dougga
+      - Amphithéâtre d'El Jem
+      - Kerkouane
+      - Bulla Regia
+      - Sbeïtla
+      - Utique
+      - Thuburbo Majus
+      - Makthar
+      - Haïdra
+      - Chemtou
+      - Oudna
+      - Musée national du Bardo
+      - Aqueduc de Zaghouan
+      - Temple des Eaux de Zaghouan
+      - Liste du patrimoine mondial en Tunisie
+      - Musée archéologique de Sousse
+      - Mosaïques romaines de Tunisie
+    architecture_medinas:
+      - Médina de Tunis
+      - Médina de Sousse
+      - Médina de Kairouan
+      - Médina de Sfax
+      - Grande Mosquée de Kairouan
+      - Mosquée Zitouna
+      - Ribat de Monastir
+      - Ribat de Sousse
+      - Tourbet el Bey
+      - Dar Ben Abdallah
+      - Palais Ennejma Ezzahra
+      - Ksar Ouled Soltane
+      - Ksar (architecture)
+      - Synagogue de la Ghriba
+      - Mausolée Habib-Bourguiba
+      - Mosquée Sidi Sahbi
+      - Bassins des Aghlabides
+      - Borj El Kebir
+    artisanat:
+      - Artisanat en Tunisie
+      - Chéchia
+      - Poterie de Sejnane
+      - Mergoum
+      - Tapis de Kairouan
+      - Poterie de Nabeul
+      - Guellala
+      - Fouta
+      - Khomsa
+      - Dinanderie
+      - Céramique tunisienne
+      # --- spécialités artisanales régionales
+      - Souk El Attarine            # Tunis : parfums
+      - Souk Ech-Chaouachine        # Tunis : chéchia
+      - Dar Chaâbane                # Nabeul : sculpture sur pierre
+      - Ksar Hellal                 # Monastir : tissage
+      - Moknine                     # Monastir : poterie
+      - Hergla                      # Sousse : vannerie d'alfa
+      - Alfa (plante)               # Kasserine / centre-ouest
+      - Kilim
+      - Corail rouge de Tabarka     # Jendouba
+    gastronomie:
+      - Cuisine tunisienne
+      - Harissa
+      - Couscous
+      - Brik
+      - Lablabi
+      - Ojja
+      - Mloukhiya
+      - Makroud
+      - Assida
+      - Bsissa
+      - Kafteji
+      - Fricassé (cuisine)
+      - Chakchouka
+      - Salade méchouia
+      - Bambalouni
+      - Deglet Nour
+      - Boukha
+      - Huile d'olive en Tunisie
+      - Thé à la menthe
+      # --- spécialités culinaires régionales
+      - Kaak warka                  # Zaghouan
+      - Charmoula                   # Sfax
+      - Rouz jerbi                  # Djerba
+      - Masfouf
+      - Bouza (crème)
+      - Zrir
+      - Mornag                      # Ben Arous : vignoble
+      - Vin tunisien                # Cap Bon, Mornag
+      - Oasis de Gabès              # Gabès : henné, grenades
+      - Eau de fleur d'oranger      # Nabeul
+      - Oléiculture en Tunisie      # Sfax, Sahel
+    coutumes_fetes:
+      - Culture de la Tunisie
+      - Mariage en Tunisie
+      - Jebba
+      - Sefseri
+      - Costume traditionnel tunisien
+      - Pèlerinage de la Ghriba
+      - Festival international de Carthage
+      - Festival international du Sahara
+      - Festival international de Hammamet
+      - Henné
+      - Charfia
+      - Fête des Ksour
+      # --- fêtes, saints et traditions régionales
+      - Aoussou                     # Sousse : carnaval
+      - Festival de l'épervier      # Nabeul : El Haouaria
+      - Saïda Manoubia              # Manouba
+      - Zaouïa de Sidi Ali Azouz    # Zaghouan
+      - Mausolée de Sidi Bou Makhlouf   # Le Kef
+      - Morisques                   # Béja (Testour), Bizerte, Zaghouan
+      - Festival international du malouf de Testour   # Béja
+      - Tabarka Jazz Festival       # Jendouba
+      - Festival de l'oasis de Tozeur
+      - Sidi Mahrez                 # Tunis
+      - Zaouïa de Sidi Abid el-Ghariani   # Kairouan
+      - Hadra (soufisme)
+    musique_arts:
+      - Musique tunisienne
+      - Malouf
+      - Stambali
+      - Mezoued
+      - La Rachidia
+      - Cinéma tunisien
+      - Littérature tunisienne
+    nature_paysages:
+      - Parc national de l'Ichkeul
+      - Chott el-Jérid
+      - Archipel des Kerkennah
+      - Djerba
+      - Douz
+      - Ksar Ghilane
+      - Chebika
+      - Tamerza
+      - Jebel Chambi
+      - Kroumirie
+      - Cap Bon
+      - Matmata
+    histoire:
+      - Histoire de la Tunisie
+      - Tunisie punique
+      - Afrique romaine
+      - Aghlabides
+      - Fatimides
+      - Hafsides
+      - Husseinites
+      - Régence de Tunis
+      - Protectorat français de Tunisie
+    langue_savoir_vivre:
+      - Arabe tunisien
+      - Hammam
+      - Narguilé
+      - Marchandage
+    # Villes : bon ancrage géographique pour les 24 gouvernorats
+    villes:
+      - Tunis
+      - Sidi Bou Saïd
+      - La Marsa
+      - Ariana
+      - Ben Arous
+      - La Manouba
+      - Nabeul
+      - Hammamet
+      - Kélibia
+      - Zaghouan
+      - Bizerte
+      - Ghar El Melh
+      - Béja
+      - Testour
+      - Jendouba
+      - Tabarka
+      - Aïn Draham
+      - Le Kef
+      - Siliana
+      - Sousse
+      - Monastir
+      - Mahdia
+      - El Jem
+      - Sfax
+      - Kairouan
+      - Kasserine
+      - Sidi Bouzid
+      - Gabès
+      - Médenine
+      - Houmt Souk
+      - Zarzis
+      - Tataouine
+      - Chenini (Tataouine)
+      - Gafsa
+      - Tozeur
+      - Nefta
+      - Kébili
+
+  # Articles sans équivalent français (amorces directes dans une autre langue)
+  extra_seeds:
+    ar:
+      langue_savoir_vivre:
+        - اللهجة التونسية
+        - أمثال شعبية تونسية
+    en:
+      coutumes_fetes:
+        - Carnival of Awussu
+        - List of festivals in Tunisia
+      langue_savoir_vivre:
+        - Tunisian Arabic
+        - Culture of Tunisia
+
+  # Catégories explorées (profondeur 0). Les noms inexistants sont simplement journalisés.
+  categories:
+    fr:
+      # Un gouvernorat = une catégorie, plafonnée à 40 pages ("|40") pour couvrir chaque région
+      - Catégorie:Gouvernorat de Tunis|40
+      - Catégorie:Gouvernorat de l'Ariana|40
+      - Catégorie:Gouvernorat de Ben Arous|40
+      - Catégorie:Gouvernorat de la Manouba|40
+      - Catégorie:Gouvernorat de Nabeul|40
+      - Catégorie:Gouvernorat de Zaghouan|40
+      - Catégorie:Gouvernorat de Bizerte|40
+      - Catégorie:Gouvernorat de Béja|40
+      - Catégorie:Gouvernorat de Jendouba|40
+      - Catégorie:Gouvernorat du Kef|40
+      - Catégorie:Gouvernorat de Siliana|40
+      - Catégorie:Gouvernorat de Sousse|40
+      - Catégorie:Gouvernorat de Monastir|40
+      - Catégorie:Gouvernorat de Mahdia|40
+      - Catégorie:Gouvernorat de Sfax|40
+      - Catégorie:Gouvernorat de Kairouan|40
+      - Catégorie:Gouvernorat de Kasserine|40
+      - Catégorie:Gouvernorat de Sidi Bouzid|40
+      - Catégorie:Gouvernorat de Gabès|40
+      - Catégorie:Gouvernorat de Médenine|40
+      - Catégorie:Gouvernorat de Tataouine|40
+      - Catégorie:Gouvernorat de Gafsa|40
+      - Catégorie:Gouvernorat de Tozeur|40
+      - Catégorie:Gouvernorat de Kébili|40
+      - Catégorie:Cuisine tunisienne
+      - Catégorie:Site archéologique en Tunisie
+      - Catégorie:Patrimoine mondial en Tunisie
+      - Catégorie:Musique tunisienne
+      - Catégorie:Mosquée en Tunisie
+      - Catégorie:Ksar en Tunisie
+      - Catégorie:Fête en Tunisie
+      - Catégorie:Festival en Tunisie
+      - Catégorie:Vêtement tunisien
+      - Catégorie:Musée en Tunisie
+    ar:
+      - تصنيف:مطبخ تونسي
+      - تصنيف:مواقع أثرية في تونس
+      - تصنيف:مواقع التراث العالمي في تونس
+      - تصنيف:موسيقى تونسية
+    en:
+      - Category:Tunisian cuisine
+      - Category:Archaeological sites in Tunisia
+      - Category:World Heritage Sites in Tunisia
+      - Category:Mosques in Tunisia
+
+# ---------------------------------------------------------------------
+# 2) Wikivoyage : très utile pour les itinéraires (quoi voir / manger / faire)
+# ---------------------------------------------------------------------
+wikivoyage:
+  license: "CC BY-SA 4.0"
+  redistributable: true
+  source_type: guide_voyage
+  langs: [fr, en]
+  pages: [Tunisie, Tunis, Carthage, Sidi Bou Saïd, Kairouan, Sousse, Monastir, Mahdia, El Jem,
+          Sfax, Djerba, Tozeur, Nefta, Douz, Matmata, Tataouine, Tabarka, Bizerte, Hammamet,
+          Nabeul, Dougga, Le Kef, Gabès, Kerkennah, Ain Draham, Kébili, Gafsa, Zaghouan, Béja,
+          Guide de conversation arabe tunisien]
+  # Titres EN quand ils diffèrent du FR
+  en_titles: {Tunisie: Tunisia, Sidi Bou Saïd: Sidi Bou Said, Gabès: Gabes, Kébili: Kebili,
+              Béja: Beja, Kerkennah: Kerkennah Islands, Ain Draham: Ain Draham,
+              Guide de conversation arabe tunisien: Tunisian Arabic phrasebook}
+
+# ---------------------------------------------------------------------
+# 2 bis) Fiches rédigées par l'équipe (config/manual/*.md) : expressions,
+#        proverbes, savoir-vivre… Lues hors-ligne à chaque `collect`.
+# ---------------------------------------------------------------------
+manual:
+  license: "CC BY 4.0 – rédigé et vérifié par l'équipe Hkeyet Bled"
+  redistributable: true
+  source_type: equipe
+
+# ---------------------------------------------------------------------
+# 3) Sites web officiels et culturels (scraping respectueux de robots.txt)
+#    -> vérifiez les URL dans un navigateur avant la collecte : les sites
+#       institutionnels tunisiens changent souvent d'adresse.
+# ---------------------------------------------------------------------
+web:
+  - name: unesco_whc
+    label: UNESCO – Centre du patrimoine mondial (fiches des biens tunisiens)
+    source_type: officiel
+    license: "© UNESCO – réutilisation non commerciale avec citation (vérifier les conditions)"
+    redistributable: false
+    urls:
+      - https://whc.unesco.org/fr/list/36     # Médina de Tunis
+      - https://whc.unesco.org/fr/list/37     # Site archéologique de Carthage
+      - https://whc.unesco.org/fr/list/38     # Amphithéâtre d'El Jem
+      - https://whc.unesco.org/fr/list/8      # Parc national de l'Ichkeul
+      - https://whc.unesco.org/fr/list/332    # Cité punique de Kerkouane
+      - https://whc.unesco.org/fr/list/498    # Médina de Sousse
+      - https://whc.unesco.org/fr/list/499    # Kairouan
+      - https://whc.unesco.org/fr/list/794    # Dougga / Thugga
+      - https://whc.unesco.org/fr/list/1640   # Djerba
+
+  - name: inp
+    label: Institut National du Patrimoine (INP)
+    source_type: officiel
+    license: "© INP – tous droits réservés (usage pédagogique avec citation)"
+    redistributable: false
+    crawl:
+      start_urls:
+        - https://www.inp2020.tn/en/category/non-classe/_monuments_sites/
+        - https://www.inp2020.tn/en/category/_monuments_sites/page/2/
+        - https://www.inp2020.tn/en/category/_monuments_sites/page/3/
+      link_pattern: 'inp2020\.tn/(en|fr|ar)/(\?p=\d+|[^/?#]+/?$)'
+      exclude_pattern: '/(category|tag|author|page|wp-|feed)'
+      max_pages: 60
+    urls:
+      - https://inp.rnrt.tn/en/?p=1008
+
+  - name: ontt
+    label: Office National du Tourisme Tunisien – brochures Discover Tunisia
+    source_type: officiel
+    license: "© ONTT – tous droits réservés (usage pédagogique avec citation)"
+    redistributable: false
+    urls:
+      - https://brochures.discovertunisia.com/Catalogue_ontt_Culture/img/catalogue-Culture.pdf
+      - https://brochures.discovertunisia.com/Catalogue_ontt_Nature/img/catalogue-Nature.pdf
+      - https://brochures.discovertunisia.com/Catalogue_ontt_Rando/img/catalogue-Rando.pdf
+      - https://www.discovertunisia.com/sites/default/files/gastronomie_tunisie.pdf   # gastronomie par région
+
+  - name: blogs
+    label: Blogs et magazines culturels
+    source_type: blog
+    license: "© auteurs respectifs – usage pédagogique avec citation"
+    redistributable: false
+    urls:
+      - https://linstant-m.tn/single-article/ar9398_crafting-heritage-the-artisanal-trades-of-tunisia-worth-preserving
+      - https://linstant-m.tn/single-article/ar9805_a-journey-through-tunisias-8-most-iconic-traditional-crafts
+      # >>> Ajoutez ici d'autres articles (un par ligne) : gastronomie, fêtes, artisanat régional…
+      # artisanat régional
+      - https://lepetitjournal.com/tunis/a-voir-a-faire/artisanat-tunisien-sejnane-et-mahdia-la-parite-nexiste-pas-53821
+      - https://fr.allafrica.com/stories/202508090014.html        # Nabeul : fleur d'oranger, piment, poterie
+      - https://fr.allafrica.com/stories/202609150676.html        # artisanat Siliana, Jendouba
+      - https://fr.vikidia.org/wiki/Projet:ALBATIN_-_Dar_Chaaban # Dar Chaâbane, pierre sculptée
+      # gastronomie régionale
+      - https://www.fr.lastminute.com/idees-voyage/foodie/gastronomie-tunisienne-specialites-culinaires
+      - https://africanmanager.com/tourisme-culinaire-lile-de-djerba-celebre-les-variantes-locales-de-son-couscous-tunisien/
+      - https://kapitalis.com/tunisie/?p=19051995                 # couscous de Djerba
+      - https://fr.allafrica.com/stories/202411240086.html        # Kerkennah : festival du poulpe
+      - https://fr.allafrica.com/stories/202604070179.html        # Béja : patrimoine culinaire
+      - https://managers.tn/2023/03/21/mekletnaa-taste-of-home-dans-les-regions-pilotes-de-zaghouan-mahdia-tozeur-et-tabarka-aindraham
+      - https://fr.allafrica.com/stories/202603200479.html        # charmoula
+      - https://www.tunisienumerique.com/plats-incontournables-du-premier-ftour-un-voyage-culinaire-a-travers-la-tunisie/
+      # fêtes régionales
+      - https://fr.allafrica.com/stories/202607110015.html        # Aoussou, Sousse
+      - https://www.webdo.tn/fr/actualite/chroniques/aoussou-rituels-traditions-et-memoire-antique/207473/
+      - https://www.webmanagercenter.com/2026/06/08/567892/el-haouaria-accueille-le-festival-de-lepervier-2026-entre-culture-biodiversite-et-traditions/
+      - https://tourismag.com/articles/22969/45me-festival-de-lpervier-un-rendez-soutenir.html

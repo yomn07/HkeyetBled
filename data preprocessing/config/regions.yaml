@@ -1,0 +1,152 @@
+# Gazetteer des 24 gouvernorats tunisiens.
+# - macro : région économique officielle (7 régions)
+# - aliases_fr : villes, sites et lieux-dits (FR/EN/translittérations) -> gouvernorat
+# - aliases_ar : idem en arabe
+# La correspondance est insensible aux accents et à la casse (côté latin)
+# et tolère les préfixes arabes (و، ب، ل، ف، ك، ال).
+# NB : "تونس" seul est volontairement absent (ambigu : Tunis / Tunisie), de même que les
+# noms qui sont aussi des mots courants (الرياض jardins, مساكن maisons, القطار train, جمال beauté…).
+
+Tunis:
+  ar: تونس العاصمة
+  macro: Grand Tunis
+  aliases_fr: [Tunis, Carthage, Sidi Bou Said, Sidi Bou Saïd, La Marsa, La Goulette, Le Bardo, Bardo, Zitouna, Zitouna, Kasbah de Tunis, Medina de Tunis, Halfaouine, Gammarth, Salammbo, Byrsa]
+  aliases_ar: [مدينة تونس, تونس العاصمة, ولاية تونس, قرطاج, سيدي بو سعيد, سيدي بوسعيد, المرسى, حلق الوادي, باردو, الزيتونة, قمرت, بيرصا]
+
+Ariana:
+  ar: أريانة
+  macro: Grand Tunis
+  aliases_fr: [Ariana, Raoued, Kalaat el-Andalous, Sidi Thabet]
+  aliases_ar: [أريانة, اريانة, رواد, قلعة الأندلس, سيدي ثابت]
+
+Ben Arous:
+  ar: بن عروس
+  macro: Grand Tunis
+  aliases_fr: [Ben Arous, Hammam Lif, Hammam-Lif, Rades, Radès, Mornag, Oudna, Uthina]
+  aliases_ar: [بن عروس, حمام الأنف, رادس, مرناق, أوذنة, اوذنة]
+
+Manouba:
+  ar: منوبة
+  macro: Grand Tunis
+  aliases_fr: [Manouba, La Manouba, Tebourba, El Battan, Jedeida]
+  aliases_ar: [منوبة, طبربة, البطان]
+
+Nabeul:
+  ar: نابل
+  macro: Nord-Est
+  aliases_fr: [Nabeul, Hammamet, Kelibia, Kélibia, Kerkouane, Cap Bon, Korba, Dar Chaabane, Menzel Temime, El Haouaria, Haouaria, Takelsa, Soliman]
+  aliases_ar: [نابل, الحمامات, قليبية, كركوان, الوطن القبلي, دار شعبان, منزل تميم, الهوارية]
+
+Zaghouan:
+  ar: زغوان
+  macro: Nord-Est
+  aliases_fr: [Zaghouan, Thuburbo Majus, Temple des Eaux, Nadhour, Zriba]
+  aliases_ar: [زغوان, تبربو ماجوس, معبد المياه, الناظور, زريبة]
+
+Bizerte:
+  ar: بنزرت
+  macro: Nord-Est
+  aliases_fr: [Bizerte, Ichkeul, Ghar El Melh, Ghar el-Melh, Rafraf, Raf Raf, Menzel Bourguiba, Utique, Utica, Sejnane, Ras Jebel, Mateur]
+  aliases_ar: [بنزرت, إشكل, اشكل, غار الملح, رفراف, منزل بورقيبة, أوتيك, سجنان, رأس الجبل, ماطر]
+
+Beja:
+  ar: باجة
+  macro: Nord-Ouest
+  aliases_fr: [Beja, Béja, Dougga, Thugga, Testour, Teboursouk, Téboursouk, Thibar, Nefza, Medjez el-Bab]
+  aliases_ar: [باجة, دقة, تستور, تبرسق, تيبار, نفزة, مجاز الباب]
+
+Jendouba:
+  ar: جندوبة
+  macro: Nord-Ouest
+  aliases_fr: [Jendouba, Bulla Regia, Chemtou, Simitthus, Tabarka, Ain Draham, Aïn Draham, Kroumirie, Ghardimaou, Fernana]
+  aliases_ar: [جندوبة, بلاريجيا, بلا ريجيا, شمتو, طبرقة, عين دراهم, غار الدماء, فرنانة]
+
+Le Kef:
+  ar: الكاف
+  macro: Nord-Ouest
+  aliases_fr: [Le Kef, El Kef, Sicca Veneria, Kalaat Senan, Table de Jugurtha, Dahmani, Tajerouine, Sakiet Sidi Youssef]
+  aliases_ar: [الكاف, قلعة سنان, مائدة يوغرطة, الدهماني, تاجروين, ساقية سيدي يوسف]
+
+Siliana:
+  ar: سليانة
+  macro: Nord-Ouest
+  aliases_fr: [Siliana, Makthar, Maktar, Mactaris, Bargou, Gaafour, Gaâfour, Kesra]
+  aliases_ar: [سليانة, مكثر, برقو, قعفور]
+
+Sousse:
+  ar: سوسة
+  macro: Centre-Est
+  aliases_fr: [Sousse, Port El-Kantaoui, Port el Kantaoui, Hammam Sousse, Enfidha, Hergla, Takrouna, Msaken, Hadrumete, Hadrumetum]
+  aliases_ar: [سوسة, القنطاوي, حمام سوسة, النفيضة, هرقلة, تكرونة]
+
+Monastir:
+  ar: المنستير
+  macro: Centre-Est
+  aliases_fr: [Monastir, Ksar Hellal, Moknine, Lamta, Jemmal, Ksibet el-Mediouni, Bekalta]
+  aliases_ar: [المنستير, قصر هلال, المكنين, لمطة, البقالطة]
+
+Mahdia:
+  ar: المهدية
+  macro: Centre-Est
+  aliases_fr: [Mahdia, El Jem, El Djem, Thysdrus, Ksour Essef, Chebba, Salakta]
+  aliases_ar: [المهدية, الجم, قصور الساف, سلقطة]
+
+Sfax:
+  ar: صفاقس
+  macro: Centre-Est
+  aliases_fr: [Sfax, Kerkennah, Kerkenna, Thyna, Thaenae, Mahres, Mahrès, Agareb]
+  aliases_ar: [صفاقس, قرقنة, طينة, المحرس]
+
+Kairouan:
+  ar: القيروان
+  macro: Centre-Ouest
+  aliases_fr: [Kairouan, Kairouan, Raqqada, Reqqada, Sbikha, Haffouz, Okba ibn Nafi, Sidi Sahbi]
+  aliases_ar: [القيروان, رقادة, السبيخة, حفوز, عقبة بن نافع, سيدي الصحبي]
+
+Kasserine:
+  ar: القصرين
+  macro: Centre-Ouest
+  aliases_fr: [Kasserine, Sbeitla, Sbeïtla, Sufetula, Haidra, Haïdra, Ammaedara, Chaambi, Chambi, Thala, Feriana, Fériana]
+  aliases_ar: [القصرين, سبيطلة, حيدرة, الشعانبي, تالة, فريانة]
+
+Sidi Bouzid:
+  ar: سيدي بوزيد
+  macro: Centre-Ouest
+  aliases_fr: [Sidi Bouzid, Regueb, Meknassy, Menzel Bouzaiane, Jilma]
+  aliases_ar: [سيدي بوزيد, المكناسي, منزل بوزيان]
+
+Gabes:
+  ar: قابس
+  macro: Sud-Est
+  aliases_fr: [Gabes, Gabès, Matmata, El Hamma, Mareth, Toujane, Tamezret, Chenini de Gabes, Chenini-Gabès]
+  aliases_ar: [قابس, مطماطة, حامة قابس, مارث, توجان, تامزرط]
+
+Medenine:
+  ar: مدنين
+  macro: Sud-Est
+  aliases_fr: [Medenine, Médenine, Djerba, Jerba, Houmt Souk, Houmt-Souk, Guellala, Midoun, Zarzis, Ghriba, Erriadh, Ben Gardane, Ajim, Meninx]
+  aliases_ar: [مدنين, جربة, حومة السوق, قلالة, ميدون, جرجيس, الغريبة, بن قردان, أجيم]
+
+Tataouine:
+  ar: تطاوين
+  macro: Sud-Est
+  aliases_fr: [Tataouine, Chenini, Ksar Ouled Soltane, Douiret, Ghomrassen, Remada, Ksar Hadada, Guermessa]
+  aliases_ar: [تطاوين, شنني, قصر أولاد سلطان, الدويرات, غمراسن, قرماسة]
+
+Gafsa:
+  ar: قفصة
+  macro: Sud-Ouest
+  aliases_fr: [Gafsa, Metlaoui, Métlaoui, Lezard rouge, Lézard rouge, Redeyef, El Guettar, Moulares, Capsa, Capsien]
+  aliases_ar: [قفصة, المتلوي, الرديف, أم العرائس, القفصية]
+
+Tozeur:
+  ar: توزر
+  macro: Sud-Ouest
+  aliases_fr: [Tozeur, Nefta, Chott el-Djerid, Chott el Jerid, Chott el-Jérid, Chebika, Tamerza, Tamaghza, Mides, Midès, Ong Jemel, Jerid, Djerid]
+  aliases_ar: [توزر, نفطة, شط الجريد, الجريد, شبيكة, تمغزة, ميداس, عنق الجمل]
+
+Kebili:
+  ar: قبلي
+  macro: Sud-Ouest
+  aliases_fr: [Kebili, Kébili, Douz, Ksar Ghilane, Nefzaoua, Nefzawa, Souk Lahad, Zaafrane, Festival international du Sahara]
+  aliases_ar: [قبلي, دوز, قصر غيلان, نفزاوة, سوق الأحد, مهرجان الصحراء]

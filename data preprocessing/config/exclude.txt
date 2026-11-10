@@ -1,0 +1,3 @@
+# Pages à exclure du corpus : un titre exact ou une URL par ligne.
+# Utile quand la recherche automatique a pris une mauvaise page.
+Costume traditionnel algérien

@@ -1,0 +1,53 @@
+# Filtres hors sujet appliqués au titre et aux catégories Wikipédia (insensible à la casse).
+# Les catégories par gouvernorat ramènent aussi des clubs, entreprises, élus… inutiles pour un
+# assistant patrimoine. Un document qui correspond à l'un de ces motifs est écarté.
+offtopic_patterns:
+  # sport
+  - football
+  - handball
+  - basket
+  - volley
+  - "club sportif"
+  - "club de "
+  - "association sportive"
+  - "stade "
+  - "sportif"
+  - "footballeur"
+  - "joueur de"
+  # politique / administration récente
+  - "personnalité politique"
+  - "homme politique"
+  - "femme politique"
+  - "député"
+  - "élection"
+  - "circonscription"
+  - "parti politique"
+  - politician
+  # économie / infrastructures
+  - "entreprise"
+  - "banque"
+  - "aéroport"
+  - "airport"
+  - "gare "
+  - "port de commerce"
+  - "centrale électrique"
+  - "zone industrielle"
+  - company
+  # santé / médias (pas l'enseignement : Zitouna, Sadiki, École de Tunis sont du patrimoine)
+  - "hôpital"
+  - "hospital"
+  - "journal"
+  - "chaîne de télévision"
+  - "radio "
+  # arabe
+  - "نادي"
+  - "كرة القدم"
+  - "كرة اليد"
+  - "سياسيون تونسيون"
+  - "شركة"
+  - "شركات"
+  - "مطار"
+  - "مستشفى"
+
+# Les documents sans aucun mot-clé patrimonial (thème « autre ») sont écartés.
+drop_theme_autre: true

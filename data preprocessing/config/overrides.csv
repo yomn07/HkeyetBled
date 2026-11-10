@@ -1,0 +1,5 @@
+id,region,theme,note
+# Corrections manuelles après vérification de docs/echantillon_validation.csv.
+# Copiez l'id depuis data/corpus.jsonl ; laissez region ou theme vide pour ne pas le modifier.
+# Régions : nom exact d'un gouvernorat de config/regions.yaml ou National. Thèmes : code de config/themes.yaml.
+# exemple : wikipedia_fr_regence-de-tunis_1a2b3c,National,histoire,article national
