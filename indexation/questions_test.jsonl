@@ -1,0 +1,28 @@
+{"lang": "fr", "theme": "patrimoine_archeologique", "question": "Où voir un amphithéâtre romain en Tunisie ?", "expected": ["El Jem", "الجم"]}
+{"lang": "ar", "theme": "patrimoine_archeologique", "question": "أين يوجد أكبر مسرح روماني في تونس؟", "expected": ["El Jem", "الجم"]}
+{"lang": "en", "theme": "patrimoine_archeologique", "question": "Where is the largest Roman amphitheatre in North Africa?", "expected": ["El Jem", "الجم"]}
+{"lang": "fr", "theme": "patrimoine_archeologique", "question": "Quelle cité punique a été découverte au cap Bon ?", "expected": ["Kerkouane", "كركوان"]}
+{"lang": "ar", "theme": "patrimoine_archeologique", "question": "ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟", "expected": ["Kerkouane", "كركوان"]}
+{"lang": "fr", "theme": "patrimoine_archeologique", "question": "Ruines romaines de l'antique Uthina près de Tunis", "expected": ["Oudna", "Uthina", "أوذنة"]}
+{"lang": "en", "theme": "patrimoine_archeologique", "question": "Roman colony of Capsa in southern Tunisia", "expected": ["Capsa", "Gafsa", "قفصة"]}
+{"lang": "fr", "theme": "architecture_medinas", "question": "Village bleu et blanc près de Tunis, célèbre pour ses cafés", "expected": ["Sidi Bou Sa", "سيدي بو سعيد"]}
+{"lang": "ar", "theme": "architecture_medinas", "question": "ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟", "expected": ["Sidi Bou Sa", "سيدي بو سعيد"]}
+{"lang": "en", "theme": "architecture_medinas", "question": "What is a ksar and where can I see ksour near Tataouine?", "expected": ["Ksar", "قصر"]}
+{"lang": "fr", "theme": "architecture_medinas", "question": "Quelle est la grande mosquée de Monastir ?", "expected": ["Mosquée de Monastir", "Mosque of Monastir", "جامع المنستير"]}
+{"lang": "en", "theme": "architecture_medinas", "question": "Main town of Djerba island with its souk", "expected": ["Houmt", "حومة السوق"]}
+{"lang": "fr", "theme": "gastronomie", "question": "Qu'est-ce que le kefteji et comment le prépare-t-on ?", "expected": ["Kefteji", "كفتاجي"]}
+{"lang": "en", "theme": "gastronomie", "question": "What is hlalem soup made of?", "expected": ["Hlalem", "حلالم"]}
+{"lang": "fr", "theme": "artisanat", "question": "Où trouver un musée consacré aux tapis à Kairouan ?", "expected": ["Musée du tapis", "tapis"]}
+{"lang": "fr", "theme": "musique_arts", "question": "Quel festival de théâtre a lieu chaque année à Carthage ?", "expected": ["Journées théâtrales", "أيام قرطاج المسرحية"]}
+{"lang": "ar", "theme": "musique_arts", "question": "ما هي خصائص الموسيقى التونسية؟", "expected": ["موسيقى تونسية", "Musique tunisienne", "Music of Tunisia"]}
+{"lang": "fr", "theme": "musique_arts", "question": "Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?", "expected": ["Café des délices"]}
+{"lang": "en", "theme": "nature_paysages", "question": "Which mountain is the highest point in Tunisia?", "expected": ["Chambi", "الشعانبي"]}
+{"lang": "fr", "theme": "nature_paysages", "question": "Quel est le plus haut sommet de Tunisie ?", "expected": ["Chambi", "الشعانبي"]}
+{"lang": "ar", "theme": "nature_paysages", "question": "ما هو شط الجريد وأين يقع؟", "expected": ["Jérid", "Jerid", "Djerid", "الجريد"]}
+{"lang": "fr", "theme": "nature_paysages", "question": "Grand lac salé du sud tunisien près de Tozeur", "expected": ["Jérid", "Jerid", "Djerid", "الجريد"]}
+{"lang": "en", "theme": "nature_paysages", "question": "Mountain oasis with a waterfall near Tozeur", "expected": ["Chebika", "الشبيكة"]}
+{"lang": "fr", "theme": "nature_paysages", "question": "Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs", "expected": ["Kelbia", "كلبية"]}
+{"lang": "en", "theme": "histoire", "question": "History of Tunisia from Carthage to independence", "expected": ["History of Tunisia", "Histoire de la Tunisie", "تاريخ تونس"]}
+{"lang": "ar", "theme": "histoire", "question": "ما هي فسقية الأغالبة في القيروان؟", "expected": ["Aghlab", "الأغالبة"]}
+{"lang": "ar", "theme": "histoire", "question": "ما هو تاريخ مدينة نفطة؟", "expected": ["نفطة", "Nefta"]}
+{"lang": "fr", "theme": "coutumes_fetes", "question": "Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?", "expected": ["Fête", "Festival", "عيد", "مهرجان"]}
