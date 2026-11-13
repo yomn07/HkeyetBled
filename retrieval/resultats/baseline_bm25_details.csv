@@ -1,0 +1,29 @@
+modèle,config,lang,question,rank,top1
+—,bm25,fr,Où voir un amphithéâtre romain en Tunisie ?,2,Mahdia
+—,bm25,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+—,bm25,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+—,bm25,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+—,bm25,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,6,نابل
+—,bm25,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Oudna
+—,bm25,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+—,bm25,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+—,bm25,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,سيدي بوسعيد
+—,bm25,en,What is a ksar and where can I see ksour near Tataouine?,4,Chenini
+—,bm25,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+—,bm25,en,Main town of Djerba island with its souk,2,Djerba
+—,bm25,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+—,bm25,en,What is hlalem soup made of?,1,Hlalem
+—,bm25,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+—,bm25,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,,Culture de la Tunisie
+—,bm25,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+—,bm25,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+—,bm25,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+—,bm25,fr,Quel est le plus haut sommet de Tunisie ?,,Djebel Ghorra
+—,bm25,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+—,bm25,fr,Grand lac salé du sud tunisien près de Tozeur,4,Kairouan
+—,bm25,en,Mountain oasis with a waterfall near Tozeur,1,"Chebika, Tozeur"
+—,bm25,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,El Maâmoura
+—,bm25,en,History of Tunisia from Carthage to independence,2,La Marsa
+—,bm25,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+—,bm25,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+—,bm25,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,2,Djerba célèbre le couscous comme expression de l'identité

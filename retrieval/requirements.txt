@@ -1,0 +1,3 @@
+# Lot 3 — dépendances (en plus de celles des Lots 1 et 2 : faiss-cpu, sentence-transformers, torch)
+numpy
+rank_bm25
