@@ -1,0 +1,33 @@
+{
+  "model_key": "bge-m3",
+  "model_name": "BAAI/bge-m3",
+  "materiel": "cuda:0 (fp16)",
+  "batch_size": 32,
+  "query_prefix": "",
+  "passage_prefix": "",
+  "dim": 1024,
+  "index_type": "IndexFlatIP (cosinus, vecteurs normalisés)",
+  "chunking": {
+    "max_tokens": 400,
+    "overlap": 80,
+    "min_tokens": 60,
+    "coupe": "sections '## ' puis fenêtre glissante"
+  },
+  "n_docs": 1163,
+  "n_chunks": 8474,
+  "tokens_par_chunk": {
+    "moyenne": 242.2,
+    "min": 60,
+    "max": 400
+  },
+  "temps_s": {
+    "chunking": 14.8,
+    "embeddings": 123.2,
+    "total": 138.0
+  },
+  "taille_mo": {
+    "index": 34.71,
+    "metadonnees": 13.6
+  },
+  "corpus_sha256": "f25d2d3a7c11c0a8"
+}

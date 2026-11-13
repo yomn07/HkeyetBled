@@ -7,3 +7,6 @@ ftfy>=6.1
 trafilatura>=1.8   # extraction du contenu principal des pages web (optionnel mais recommandé)
 pypdf>=4.0         # extraction du texte des brochures PDF (ONTT)
 matplotlib>=3.7    # graphique de couverture dans la fiche de corpus (optionnel)
+sentence-transformers
+faiss-cpu
+numpy
