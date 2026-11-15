@@ -22,6 +22,8 @@ Analogie : c'est le bibliothécaire. Le Lot 2 a rangé les 8 474 fiches ; ici on
 | `evaluate.py` | Compare bm25 / dense / hybride / reranker sur les 28 questions |
 | `tests/test_retrieval.py` | 15 tests sans modèle ni GPU |
 | `resultats/baseline_bm25.md` | Résultats mesurés pour BM25 seul |
+| `resultats/comparaison_retrieval.md` | Comparaison complète : 2 modèles × 4 modes, avec et sans filtre thème |
+| `resultats/details_par_question.csv` | Résultat question par question (pour l'analyse des échecs) |
 | `requirements.txt` | `numpy`, `rank_bm25` |
 
 ## Installation
@@ -56,19 +58,52 @@ python retrieval/evaluate.py --models e5 bge-m3 --modes bm25 dense hybrid hybrid
 ```
 Écrit `resultats/comparaison_retrieval.md` et `details_par_question.csv`.
 
-**Mesuré ici (BM25 seul, 28 questions)** : hit@1 = 0,571 ; hit@5 = 0,821 ; MRR = 0,685.
-Rappel du Lot 2 (dense seul) : hit@5 = 0,893 avec e5 et bge-m3.
-Les lignes dense, hybride et reranker sont **à produire** en lançant la commande ci-dessus (modèles requis, GPU conseillé).
+Jeu de test : 28 questions (13 FR, 8 EN, 7 AR). hit@k = le bon article est dans les k premiers ; MRR = moyenne de 1/rang.
+Les temps sont mesurés sur **CPU** (sans GPU) ; le reranker est donc nettement plus rapide sur GPU.
 
-## À faire pour terminer le lot
-1. Lancer `evaluate.py` avec les 4 modes et les 2 modèles ; coller le tableau dans le rapport.
-2. Choisir le modèle d'embeddings final (e5 plus léger, bge-m3 meilleur en arabe) et le justifier avec les chiffres.
-3. Garder le reranker seulement si le gain de hit@5 / MRR justifie le temps de réponse.
-4. Régler `w_dense`, `w_bm25`, `pool` si l'hybride ne dépasse pas le dense seul.
-5. Analyser les questions encore ratées (`details_par_question.csv`) : à présenter à la soutenance.
+### Résultats globaux
+
+| Modèle | Config | hit@1 | hit@5 | MRR | ms/question |
+|---|---|---|---|---|---|
+| — | bm25 | 0,571 | 0,821 | 0,685 | 238 |
+| — | bm25 + filtre thème | 0,607 | 0,929 | 0,727 | 21 |
+| e5 | dense | 0,679 | 0,929 | 0,766 | 87 |
+| e5 | dense + filtre thème | 0,679 | 0,929 | 0,766 | 38 |
+| e5 | hybrid | 0,679 | 0,929 | 0,786 | 61 |
+| e5 | hybrid + filtre thème | 0,679 | 0,929 | 0,789 | 61 |
+| e5 | hybrid_rerank | 0,714 | 0,929 | 0,821 | 17 653 |
+| e5 | hybrid_rerank + filtre thème | 0,714 | 0,929 | 0,821 | 18 465 |
+| bge-m3 | dense | 0,679 | 0,893 | 0,776 | 118 |
+| bge-m3 | dense + filtre thème | 0,679 | 0,893 | 0,791 | 124 |
+| bge-m3 | hybrid | 0,643 | 0,893 | 0,743 | 323 |
+| bge-m3 | hybrid + filtre thème | 0,643 | 0,893 | 0,756 | 128 |
+| bge-m3 | hybrid_rerank | 0,750 | 0,964 | 0,857 | 23 605 |
+| bge-m3 | hybrid_rerank + filtre thème | 0,786 | 1,000 | 0,893 | 26 902 |
+
+Détail par langue : voir `resultats/comparaison_retrieval.md`.
+
+### Ce que montrent les résultats
+- **Le reranker apporte le plus gros gain** : +0,10 de MRR avec bge-m3 (0,743 → 0,857) et +0,035 avec e5 (0,786 → 0,821). Le hit@5 de bge-m3 passe de 0,893 à 0,964.
+- **L'hybride n'est pas toujours meilleur que le dense** : avec e5, léger gain de MRR (0,766 → 0,786) ; avec bge-m3, le MRR baisse (0,776 → 0,743). Les poids `w_dense` / `w_bm25` n'ont pas encore été réglés.
+- **bge-m3 est le meilleur en arabe avec le reranker** : hit@1 = 0,857 et MRR = 0,929 (7 questions), contre 0,714 et 0,786 pour e5.
+- **Le filtre thème est un cas idéal** : dans `evaluate.py`, le thème est lu directement dans `questions_test.jsonl`. En usage réel, l'utilisateur ne fournit pas le thème. Les lignes « + filtre thème » (en particulier hit@5 = 1,0) sont donc un plafond ; pour comparer honnêtement les configurations, on utilise les lignes **sans** filtre.
+
+### Configuration recommandée
+| Cas | Configuration | Résultats (sans filtre thème) |
+|---|---|---|
+| Qualité maximale | **bge-m3 + hybrid + reranker** | hit@5 = 0,964 ; MRR = 0,857 ; très lent sur CPU (~24 s/question), à utiliser avec un GPU |
+| Rapide / démo sans GPU | **e5 + hybrid** (défaut de `retrieve()`) | hit@5 = 0,929 ; MRR = 0,786 ; 61 ms/question |
+
+Choix du modèle : bge-m3 si l'arabe compte (meilleur MRR après reranking, hit@5 = 1,0 en arabe) ; e5 s'il faut un modèle plus léger (index de 26 Mo contre 35 Mo, indexation 2,4 fois plus rapide).
+
+## Reste à faire
+1. Régler `w_dense`, `w_bm25` et `pool` (en particulier pour bge-m3, où l'hybride fait moins bien que le dense seul).
+2. Analyser les questions encore ratées avec la configuration retenue (`resultats/details_par_question.csv`) : à présenter à la soutenance.
+3. Si le filtre thème est utilisé en production, prévoir une classification automatique du thème de la question.
 
 ## Limites connues
-- Le jeu de test est petit (28 questions) : une question de plus ou de moins change le hit@5 d'environ 3,6 points.
+- Le jeu de test est petit (28 questions) : une question de plus ou de moins change le hit@5 d'environ 3,6 points ; les écarts de l'ordre de 0,03 entre configurations ne sont pas significatifs.
+- Le filtre thème de l'évaluation utilise le thème fourni dans le jeu de test (cas idéal), pas un thème prédit.
 - Le filtre région dépend de l'annotation du Lot 1 (lexique de lieux), qui peut se tromper.
 - Les cases région × thème peu fournies (ex. artisanat) peuvent renvoyer peu de résultats : le repli compense.
-- Le reranker `BAAI/bge-reranker-v2-m3` est lourd ; sur CPU, comptez plusieurs secondes par question.
+- Le reranker `BAAI/bge-reranker-v2-m3` est lourd ; mesuré sur CPU : 17 à 27 secondes par question. Un GPU est conseillé.
