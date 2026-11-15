@@ -1,0 +1,393 @@
+modèle,config,lang,question,rank,top1
+—,bm25,fr,Où voir un amphithéâtre romain en Tunisie ?,2,Mahdia
+—,bm25,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+—,bm25,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+—,bm25,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+—,bm25,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,6,نابل
+—,bm25,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Oudna
+—,bm25,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+—,bm25,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+—,bm25,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,سيدي بوسعيد
+—,bm25,en,What is a ksar and where can I see ksour near Tataouine?,4,Chenini
+—,bm25,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+—,bm25,en,Main town of Djerba island with its souk,2,Djerba
+—,bm25,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+—,bm25,en,What is hlalem soup made of?,1,Hlalem
+—,bm25,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+—,bm25,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,,Culture de la Tunisie
+—,bm25,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+—,bm25,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+—,bm25,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+—,bm25,fr,Quel est le plus haut sommet de Tunisie ?,,Djebel Ghorra
+—,bm25,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+—,bm25,fr,Grand lac salé du sud tunisien près de Tozeur,4,Kairouan
+—,bm25,en,Mountain oasis with a waterfall near Tozeur,1,"Chebika, Tozeur"
+—,bm25,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,El Maâmoura
+—,bm25,en,History of Tunisia from Carthage to independence,2,La Marsa
+—,bm25,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+—,bm25,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+—,bm25,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,2,Djerba célèbre le couscous comme expression de l'identité
+—,bm25+filtre_theme,fr,Où voir un amphithéâtre romain en Tunisie ?,2,Mahdia
+—,bm25+filtre_theme,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+—,bm25+filtre_theme,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+—,bm25+filtre_theme,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+—,bm25+filtre_theme,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,4,نابل
+—,bm25+filtre_theme,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Oudna
+—,bm25+filtre_theme,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+—,bm25+filtre_theme,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+—,bm25+filtre_theme,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,سيدي بوسعيد
+—,bm25+filtre_theme,en,What is a ksar and where can I see ksour near Tataouine?,4,Chenini
+—,bm25+filtre_theme,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+—,bm25+filtre_theme,en,Main town of Djerba island with its souk,2,Djerba
+—,bm25+filtre_theme,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+—,bm25+filtre_theme,en,What is hlalem soup made of?,1,Hlalem
+—,bm25+filtre_theme,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+—,bm25+filtre_theme,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,5,Culture de la Tunisie
+—,bm25+filtre_theme,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+—,bm25+filtre_theme,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+—,bm25+filtre_theme,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+—,bm25+filtre_theme,fr,Quel est le plus haut sommet de Tunisie ?,3,Djebel Ghorra
+—,bm25+filtre_theme,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+—,bm25+filtre_theme,fr,Grand lac salé du sud tunisien près de Tozeur,3,Kébili
+—,bm25+filtre_theme,en,Mountain oasis with a waterfall near Tozeur,1,"Chebika, Tozeur"
+—,bm25+filtre_theme,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,El Maâmoura
+—,bm25+filtre_theme,en,History of Tunisia from Carthage to independence,2,La Marsa
+—,bm25+filtre_theme,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+—,bm25+filtre_theme,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+—,bm25+filtre_theme,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+e5,dense,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+e5,dense,ar,أين يوجد أكبر مسرح روماني في تونس؟,1,قصر الجم
+e5,dense,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphitheatre of El Jem
+e5,dense,fr,Quelle cité punique a été découverte au cap Bon ?,3,Cap Bon
+e5,dense,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+e5,dense,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+e5,dense,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+e5,dense,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",2,Tunisie
+e5,dense,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,مدينة تونس العتيقة
+e5,dense,en,What is a ksar and where can I see ksour near Tataouine?,2,Tataouine
+e5,dense,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+e5,dense,en,Main town of Djerba island with its souk,1,Houmt El Souk
+e5,dense,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+e5,dense,en,What is hlalem soup made of?,1,Hlalem
+e5,dense,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+e5,dense,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,1,Journées théâtrales de Carthage
+e5,dense,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+e5,dense,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+e5,dense,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+e5,dense,fr,Quel est le plus haut sommet de Tunisie ?,3,Djebel Semmama
+e5,dense,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+e5,dense,fr,Grand lac salé du sud tunisien près de Tozeur,3,Tozeur
+e5,dense,en,Mountain oasis with a waterfall near Tozeur,5,Tozeur
+e5,dense,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,catalogue
+e5,dense,en,History of Tunisia from Carthage to independence,4,Tunisia
+e5,dense,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+e5,dense,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+e5,dense,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+e5,dense+filtre_theme,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+e5,dense+filtre_theme,ar,أين يوجد أكبر مسرح روماني في تونس؟,1,قصر الجم
+e5,dense+filtre_theme,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphitheatre of El Jem
+e5,dense+filtre_theme,fr,Quelle cité punique a été découverte au cap Bon ?,3,Cap Bon
+e5,dense+filtre_theme,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+e5,dense+filtre_theme,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+e5,dense+filtre_theme,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+e5,dense+filtre_theme,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",2,Tunisie
+e5,dense+filtre_theme,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,مدينة تونس العتيقة
+e5,dense+filtre_theme,en,What is a ksar and where can I see ksour near Tataouine?,2,Tataouine
+e5,dense+filtre_theme,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+e5,dense+filtre_theme,en,Main town of Djerba island with its souk,1,Houmt El Souk
+e5,dense+filtre_theme,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+e5,dense+filtre_theme,en,What is hlalem soup made of?,1,Hlalem
+e5,dense+filtre_theme,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+e5,dense+filtre_theme,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,1,Journées théâtrales de Carthage
+e5,dense+filtre_theme,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+e5,dense+filtre_theme,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+e5,dense+filtre_theme,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+e5,dense+filtre_theme,fr,Quel est le plus haut sommet de Tunisie ?,3,Djebel Semmama
+e5,dense+filtre_theme,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+e5,dense+filtre_theme,fr,Grand lac salé du sud tunisien près de Tozeur,3,Tozeur
+e5,dense+filtre_theme,en,Mountain oasis with a waterfall near Tozeur,5,Tozeur
+e5,dense+filtre_theme,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,catalogue
+e5,dense+filtre_theme,en,History of Tunisia from Carthage to independence,4,Tunisia
+e5,dense+filtre_theme,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+e5,dense+filtre_theme,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+e5,dense+filtre_theme,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+e5,hybrid,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+e5,hybrid,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+e5,hybrid,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+e5,hybrid,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+e5,hybrid,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+e5,hybrid,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+e5,hybrid,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+e5,hybrid,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+e5,hybrid,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,تونس (مدينة)
+e5,hybrid,en,What is a ksar and where can I see ksour near Tataouine?,2,Tataouine
+e5,hybrid,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+e5,hybrid,en,Main town of Djerba island with its souk,1,Houmt El Souk
+e5,hybrid,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+e5,hybrid,en,What is hlalem soup made of?,1,Hlalem
+e5,hybrid,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+e5,hybrid,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,4,Culture de la Tunisie
+e5,hybrid,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+e5,hybrid,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+e5,hybrid,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+e5,hybrid,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Ghorra
+e5,hybrid,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+e5,hybrid,fr,Grand lac salé du sud tunisien près de Tozeur,2,Tozeur
+e5,hybrid,en,Mountain oasis with a waterfall near Tozeur,2,Tamerza
+e5,hybrid,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,catalogue
+e5,hybrid,en,History of Tunisia from Carthage to independence,4,La Marsa
+e5,hybrid,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+e5,hybrid,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+e5,hybrid,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+e5,hybrid+filtre_theme,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+e5,hybrid+filtre_theme,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+e5,hybrid+filtre_theme,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+e5,hybrid+filtre_theme,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+e5,hybrid+filtre_theme,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+e5,hybrid+filtre_theme,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+e5,hybrid+filtre_theme,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+e5,hybrid+filtre_theme,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+e5,hybrid+filtre_theme,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,سيدي بوسعيد
+e5,hybrid+filtre_theme,en,What is a ksar and where can I see ksour near Tataouine?,2,Tataouine
+e5,hybrid+filtre_theme,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+e5,hybrid+filtre_theme,en,Main town of Djerba island with its souk,1,Houmt El Souk
+e5,hybrid+filtre_theme,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+e5,hybrid+filtre_theme,en,What is hlalem soup made of?,1,Hlalem
+e5,hybrid+filtre_theme,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+e5,hybrid+filtre_theme,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,3,Culture de la Tunisie
+e5,hybrid+filtre_theme,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+e5,hybrid+filtre_theme,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+e5,hybrid+filtre_theme,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+e5,hybrid+filtre_theme,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Ghorra
+e5,hybrid+filtre_theme,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+e5,hybrid+filtre_theme,fr,Grand lac salé du sud tunisien près de Tozeur,2,Tozeur
+e5,hybrid+filtre_theme,en,Mountain oasis with a waterfall near Tozeur,2,Tamerza
+e5,hybrid+filtre_theme,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,El Maâmoura
+e5,hybrid+filtre_theme,en,History of Tunisia from Carthage to independence,4,La Marsa
+e5,hybrid+filtre_theme,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+e5,hybrid+filtre_theme,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+e5,hybrid+filtre_theme,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+e5,hybrid_rerank,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+e5,hybrid_rerank,ar,أين يوجد أكبر مسرح روماني في تونس؟,1,قصر الجم
+e5,hybrid_rerank,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+e5,hybrid_rerank,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+e5,hybrid_rerank,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,2,نابل
+e5,hybrid_rerank,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+e5,hybrid_rerank,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+e5,hybrid_rerank,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+e5,hybrid_rerank,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,قرطاج
+e5,hybrid_rerank,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Ouled Soltane
+e5,hybrid_rerank,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+e5,hybrid_rerank,en,Main town of Djerba island with its souk,1,Houmt El Souk
+e5,hybrid_rerank,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+e5,hybrid_rerank,en,What is hlalem soup made of?,1,Hlalem
+e5,hybrid_rerank,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+e5,hybrid_rerank,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,1,Journées théâtrales de Carthage
+e5,hybrid_rerank,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+e5,hybrid_rerank,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,2,Sidi Bou Said
+e5,hybrid_rerank,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+e5,hybrid_rerank,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Semmama
+e5,hybrid_rerank,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+e5,hybrid_rerank,fr,Grand lac salé du sud tunisien près de Tozeur,2,Tozeur
+e5,hybrid_rerank,en,Mountain oasis with a waterfall near Tozeur,2,Tamerza
+e5,hybrid_rerank,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,Parc national de l'Ichkeul
+e5,hybrid_rerank,en,History of Tunisia from Carthage to independence,2,Tunisia
+e5,hybrid_rerank,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+e5,hybrid_rerank,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+e5,hybrid_rerank,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+e5,hybrid_rerank+filtre_theme,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+e5,hybrid_rerank+filtre_theme,ar,أين يوجد أكبر مسرح روماني في تونس؟,1,قصر الجم
+e5,hybrid_rerank+filtre_theme,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+e5,hybrid_rerank+filtre_theme,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+e5,hybrid_rerank+filtre_theme,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,2,نابل
+e5,hybrid_rerank+filtre_theme,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+e5,hybrid_rerank+filtre_theme,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+e5,hybrid_rerank+filtre_theme,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+e5,hybrid_rerank+filtre_theme,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,سيدي بوسعيد
+e5,hybrid_rerank+filtre_theme,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Ouled Soltane
+e5,hybrid_rerank+filtre_theme,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+e5,hybrid_rerank+filtre_theme,en,Main town of Djerba island with its souk,1,Houmt El Souk
+e5,hybrid_rerank+filtre_theme,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+e5,hybrid_rerank+filtre_theme,en,What is hlalem soup made of?,1,Hlalem
+e5,hybrid_rerank+filtre_theme,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+e5,hybrid_rerank+filtre_theme,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,1,Journées théâtrales de Carthage
+e5,hybrid_rerank+filtre_theme,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+e5,hybrid_rerank+filtre_theme,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,2,Sidi Bou Said
+e5,hybrid_rerank+filtre_theme,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+e5,hybrid_rerank+filtre_theme,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Semmama
+e5,hybrid_rerank+filtre_theme,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+e5,hybrid_rerank+filtre_theme,fr,Grand lac salé du sud tunisien près de Tozeur,2,Tozeur
+e5,hybrid_rerank+filtre_theme,en,Mountain oasis with a waterfall near Tozeur,2,Tamerza
+e5,hybrid_rerank+filtre_theme,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,Parc national de l'Ichkeul
+e5,hybrid_rerank+filtre_theme,en,History of Tunisia from Carthage to independence,2,Tunisia
+e5,hybrid_rerank+filtre_theme,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+e5,hybrid_rerank+filtre_theme,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+e5,hybrid_rerank+filtre_theme,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+bge-m3,dense,fr,Où voir un amphithéâtre romain en Tunisie ?,1,El Jem
+bge-m3,dense,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+bge-m3,dense,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+bge-m3,dense,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,dense,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,dense,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+bge-m3,dense,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+bge-m3,dense,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",2,Tunis
+bge-m3,dense,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,4,القصرين
+bge-m3,dense,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Bayouli
+bge-m3,dense,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+bge-m3,dense,en,Main town of Djerba island with its souk,2,Djerba
+bge-m3,dense,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+bge-m3,dense,en,What is hlalem soup made of?,1,Hlalem
+bge-m3,dense,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+bge-m3,dense,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,3,Festival international de Carthage
+bge-m3,dense,ar,ما هي خصائص الموسيقى التونسية؟,2,ثقافة تونس
+bge-m3,dense,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+bge-m3,dense,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+bge-m3,dense,fr,Quel est le plus haut sommet de Tunisie ?,1,Jebel ech Chambi
+bge-m3,dense,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+bge-m3,dense,fr,Grand lac salé du sud tunisien près de Tozeur,,Tozeur
+bge-m3,dense,en,Mountain oasis with a waterfall near Tozeur,7,Tozeur
+bge-m3,dense,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,Sousse
+bge-m3,dense,en,History of Tunisia from Carthage to independence,1,Histoire de la Tunisie
+bge-m3,dense,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+bge-m3,dense,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+bge-m3,dense,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+bge-m3,dense+filtre_theme,fr,Où voir un amphithéâtre romain en Tunisie ?,1,El Jem
+bge-m3,dense+filtre_theme,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+bge-m3,dense+filtre_theme,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+bge-m3,dense+filtre_theme,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,dense+filtre_theme,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,dense+filtre_theme,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+bge-m3,dense+filtre_theme,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+bge-m3,dense+filtre_theme,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",2,Tunis
+bge-m3,dense+filtre_theme,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,2,القصرين
+bge-m3,dense+filtre_theme,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Bayouli
+bge-m3,dense+filtre_theme,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+bge-m3,dense+filtre_theme,en,Main town of Djerba island with its souk,2,Djerba
+bge-m3,dense+filtre_theme,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+bge-m3,dense+filtre_theme,en,What is hlalem soup made of?,1,Hlalem
+bge-m3,dense+filtre_theme,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+bge-m3,dense+filtre_theme,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,2,Festival international de Carthage
+bge-m3,dense+filtre_theme,ar,ما هي خصائص الموسيقى التونسية؟,2,ثقافة تونس
+bge-m3,dense+filtre_theme,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+bge-m3,dense+filtre_theme,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+bge-m3,dense+filtre_theme,fr,Quel est le plus haut sommet de Tunisie ?,1,Jebel ech Chambi
+bge-m3,dense+filtre_theme,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+bge-m3,dense+filtre_theme,fr,Grand lac salé du sud tunisien près de Tozeur,,Tozeur
+bge-m3,dense+filtre_theme,en,Mountain oasis with a waterfall near Tozeur,7,Tozeur
+bge-m3,dense+filtre_theme,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,catalogue
+bge-m3,dense+filtre_theme,en,History of Tunisia from Carthage to independence,1,Histoire de la Tunisie
+bge-m3,dense+filtre_theme,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+bge-m3,dense+filtre_theme,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+bge-m3,dense+filtre_theme,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+bge-m3,hybrid,fr,Où voir un amphithéâtre romain en Tunisie ?,1,El Jem
+bge-m3,hybrid,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+bge-m3,hybrid,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+bge-m3,hybrid,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,hybrid,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,hybrid,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+bge-m3,hybrid,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+bge-m3,hybrid,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",2,Tunis
+bge-m3,hybrid,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,,سيدي بوسعيد
+bge-m3,hybrid,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Essaâda
+bge-m3,hybrid,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+bge-m3,hybrid,en,Main town of Djerba island with its souk,1,Houmt El Souk
+bge-m3,hybrid,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+bge-m3,hybrid,en,What is hlalem soup made of?,1,Hlalem
+bge-m3,hybrid,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+bge-m3,hybrid,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,4,Festival international de Carthage
+bge-m3,hybrid,ar,ما هي خصائص الموسيقى التونسية؟,2,ثقافة تونس
+bge-m3,hybrid,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+bge-m3,hybrid,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+bge-m3,hybrid,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Ghorra
+bge-m3,hybrid,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+bge-m3,hybrid,fr,Grand lac salé du sud tunisien près de Tozeur,10,Tozeur
+bge-m3,hybrid,en,Mountain oasis with a waterfall near Tozeur,5,Tozeur
+bge-m3,hybrid,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,El Maâmoura
+bge-m3,hybrid,en,History of Tunisia from Carthage to independence,4,Tunisia
+bge-m3,hybrid,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+bge-m3,hybrid,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+bge-m3,hybrid,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+bge-m3,hybrid+filtre_theme,fr,Où voir un amphithéâtre romain en Tunisie ?,1,El Jem
+bge-m3,hybrid+filtre_theme,ar,أين يوجد أكبر مسرح روماني في تونس؟,2,دقة (تونس)
+bge-m3,hybrid+filtre_theme,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+bge-m3,hybrid+filtre_theme,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,hybrid+filtre_theme,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,hybrid+filtre_theme,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+bge-m3,hybrid+filtre_theme,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+bge-m3,hybrid+filtre_theme,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",2,Tunis
+bge-m3,hybrid+filtre_theme,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,9,سيدي بوسعيد
+bge-m3,hybrid+filtre_theme,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Essaâda
+bge-m3,hybrid+filtre_theme,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+bge-m3,hybrid+filtre_theme,en,Main town of Djerba island with its souk,1,Houmt El Souk
+bge-m3,hybrid+filtre_theme,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+bge-m3,hybrid+filtre_theme,en,What is hlalem soup made of?,1,Hlalem
+bge-m3,hybrid+filtre_theme,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+bge-m3,hybrid+filtre_theme,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,3,Festival international de Carthage
+bge-m3,hybrid+filtre_theme,ar,ما هي خصائص الموسيقى التونسية؟,2,ثقافة تونس
+bge-m3,hybrid+filtre_theme,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,1,Au Café des délices
+bge-m3,hybrid+filtre_theme,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+bge-m3,hybrid+filtre_theme,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Ghorra
+bge-m3,hybrid+filtre_theme,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+bge-m3,hybrid+filtre_theme,fr,Grand lac salé du sud tunisien près de Tozeur,6,Tozeur
+bge-m3,hybrid+filtre_theme,en,Mountain oasis with a waterfall near Tozeur,5,Tozeur
+bge-m3,hybrid+filtre_theme,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,10,El Maâmoura
+bge-m3,hybrid+filtre_theme,en,History of Tunisia from Carthage to independence,4,Tunisia
+bge-m3,hybrid+filtre_theme,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+bge-m3,hybrid+filtre_theme,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+bge-m3,hybrid+filtre_theme,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+bge-m3,hybrid_rerank,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+bge-m3,hybrid_rerank,ar,أين يوجد أكبر مسرح روماني في تونس؟,1,El Jem
+bge-m3,hybrid_rerank,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+bge-m3,hybrid_rerank,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,hybrid_rerank,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,2,نابل
+bge-m3,hybrid_rerank,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+bge-m3,hybrid_rerank,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+bge-m3,hybrid_rerank,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+bge-m3,hybrid_rerank,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,1,Sidi Bou Said
+bge-m3,hybrid_rerank,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Ouled Soltane
+bge-m3,hybrid_rerank,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+bge-m3,hybrid_rerank,en,Main town of Djerba island with its souk,1,Houmt El Souk
+bge-m3,hybrid_rerank,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+bge-m3,hybrid_rerank,en,What is hlalem soup made of?,1,Hlalem
+bge-m3,hybrid_rerank,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+bge-m3,hybrid_rerank,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,1,Journées théâtrales de Carthage
+bge-m3,hybrid_rerank,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+bge-m3,hybrid_rerank,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,2,Sidi Bou Said
+bge-m3,hybrid_rerank,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+bge-m3,hybrid_rerank,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Semmama
+bge-m3,hybrid_rerank,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+bge-m3,hybrid_rerank,fr,Grand lac salé du sud tunisien près de Tozeur,2,Tozeur
+bge-m3,hybrid_rerank,en,Mountain oasis with a waterfall near Tozeur,2,Tamerza
+bge-m3,hybrid_rerank,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,,Parc national de l'Ichkeul
+bge-m3,hybrid_rerank,en,History of Tunisia from Carthage to independence,2,Tunisia
+bge-m3,hybrid_rerank,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+bge-m3,hybrid_rerank,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+bge-m3,hybrid_rerank,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
+bge-m3,hybrid_rerank+filtre_theme,fr,Où voir un amphithéâtre romain en Tunisie ?,1,Amphithéâtre d'El Jem
+bge-m3,hybrid_rerank+filtre_theme,ar,أين يوجد أكبر مسرح روماني في تونس؟,1,Amphithéâtre d'El Jem
+bge-m3,hybrid_rerank+filtre_theme,en,Where is the largest Roman amphitheatre in North Africa?,1,Amphithéâtre d'El Jem
+bge-m3,hybrid_rerank+filtre_theme,fr,Quelle cité punique a été découverte au cap Bon ?,1,Cité punique de Kerkouane et sa nécropole
+bge-m3,hybrid_rerank+filtre_theme,ar,ما هي المدينة البونيقية المكتشفة في الوطن القبلي؟,2,نابل
+bge-m3,hybrid_rerank+filtre_theme,fr,Ruines romaines de l'antique Uthina près de Tunis,1,Uthina
+bge-m3,hybrid_rerank+filtre_theme,en,Roman colony of Capsa in southern Tunisia,1,Capsa (Roman colonia)
+bge-m3,hybrid_rerank+filtre_theme,fr,"Village bleu et blanc près de Tunis, célèbre pour ses cafés",1,Sidi Bou Saïd
+bge-m3,hybrid_rerank+filtre_theme,ar,ما هي القرية ذات اللونين الأزرق والأبيض قرب تونس العاصمة؟,1,Sidi Bou Said
+bge-m3,hybrid_rerank+filtre_theme,en,What is a ksar and where can I see ksour near Tataouine?,1,Ksar Ouled Soltane
+bge-m3,hybrid_rerank+filtre_theme,fr,Quelle est la grande mosquée de Monastir ?,1,Grande Mosquée de Monastir
+bge-m3,hybrid_rerank+filtre_theme,en,Main town of Djerba island with its souk,1,Houmt El Souk
+bge-m3,hybrid_rerank+filtre_theme,fr,Qu'est-ce que le kefteji et comment le prépare-t-on ?,1,Kefteji
+bge-m3,hybrid_rerank+filtre_theme,en,What is hlalem soup made of?,1,Hlalem
+bge-m3,hybrid_rerank+filtre_theme,fr,Où trouver un musée consacré aux tapis à Kairouan ?,1,Musée du tapis (Kairouan)
+bge-m3,hybrid_rerank+filtre_theme,fr,Quel festival de théâtre a lieu chaque année à Carthage ?,1,Journées théâtrales de Carthage
+bge-m3,hybrid_rerank+filtre_theme,ar,ما هي خصائص الموسيقى التونسية؟,1,موسيقى تونسية
+bge-m3,hybrid_rerank+filtre_theme,fr,Quelle chanson évoque le café des Délices de Sidi Bou Saïd ?,2,Sidi Bou Said
+bge-m3,hybrid_rerank+filtre_theme,en,Which mountain is the highest point in Tunisia?,1,Jebel ech Chambi
+bge-m3,hybrid_rerank+filtre_theme,fr,Quel est le plus haut sommet de Tunisie ?,2,Djebel Semmama
+bge-m3,hybrid_rerank+filtre_theme,ar,ما هو شط الجريد وأين يقع؟,1,شط الجريد
+bge-m3,hybrid_rerank+filtre_theme,fr,Grand lac salé du sud tunisien près de Tozeur,2,Tozeur
+bge-m3,hybrid_rerank+filtre_theme,en,Mountain oasis with a waterfall near Tozeur,2,Tamerza
+bge-m3,hybrid_rerank+filtre_theme,fr,Zone humide près de Sousse où s'arrêtent les oiseaux migrateurs,1,Sebkha Kelbia
+bge-m3,hybrid_rerank+filtre_theme,en,History of Tunisia from Carthage to independence,2,Tunisia
+bge-m3,hybrid_rerank+filtre_theme,ar,ما هي فسقية الأغالبة في القيروان؟,1,فسقية الأغالبة
+bge-m3,hybrid_rerank+filtre_theme,ar,ما هو تاريخ مدينة نفطة؟,1,نفطة (مدينة)
+bge-m3,hybrid_rerank+filtre_theme,fr,Comment célèbre-t-on les fêtes traditionnelles en Tunisie ?,1,Fêtes et jours fériés en Tunisie
