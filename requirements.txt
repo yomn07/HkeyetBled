@@ -10,3 +10,7 @@ matplotlib>=3.7    # graphique de couverture dans la fiche de corpus (optionnel)
 sentence-transformers
 faiss-cpu
 numpy
+streamlit>=1.40
+plotly>=5.20
+ragas>=0.2         # évaluation (fidélité, pertinence) : lourd, utile seulement pour --ragas
+datasets
