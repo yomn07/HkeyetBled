@@ -35,8 +35,6 @@ h1.titre{{text-align:center;margin:0 0 .8rem!important;font-family:'Cormorant Ga
 [data-testid=stButtonGroup] button *,button[data-testid^=stBaseButton-segmented_control] *{{color:#fbf3e4!important;font-weight:600!important}}
 [data-testid=stButtonGroup] button:hover,button[data-testid^=stBaseButton-segmented_control]:hover{{background:rgba(232,160,90,.55)!important}}
 [data-testid=stButtonGroup] button[aria-checked=true],button[aria-pressed=true],button[data-testid=stBaseButton-segmented_controlActive]{{background:#b8432f!important;border-color:#fbf3e4!important}}
-h1.titre{{text-align:center;margin:0 0 .8rem!important;font-family:'Cormorant Garamond',serif;font-size:3.6rem;color:#fbf3e4;margin:0;letter-spacing:.02em}}
-.titre small{{font-family:Amiri,serif;font-size:2rem;color:#e8a05a;margin-left:.8rem}}
 button[data-testid^=stBaseButton-segmented_control]{{background:rgba(251,243,228,.15)!important;color:#fbf3e4!important}}
 button[data-testid=stBaseButton-segmented_controlActive]{{background:#b8432f!important}}
 [data-testid=stVerticalBlockBorderWrapper]{{background:rgba(251,243,228,.10);backdrop-filter:blur(14px);border:1px solid rgba(251,243,228,.25)!important;border-radius:18px}}
@@ -46,8 +44,14 @@ button[data-testid=stBaseButton-segmented_controlActive]{{background:#b8432f!imp
 .carte p,.carte span,.carte li{{color:#1d2a30!important}}
 .timbre{{position:absolute;top:-14px;right:18px;background:#b8432f;color:#fff!important;font:700 .8rem Inter;padding:.5rem .7rem;border:2px dashed #fbf3e4;transform:rotate(5deg)}}
 .muet{{background:#1d2a30dd;color:#fbf3e4;border:1px dashed #e8a05a;border-radius:10px;padding:1rem 1.2rem}}
-.tampon{{border:1px solid #e8a05a88;border-radius:10px;padding:.5rem .8rem;margin:.3rem 0;font-size:.9rem}}
-.tampon.cite{{border-color:#e8a05a;background:#e8a05a22}} .rtl{{direction:rtl;font-family:Amiri,serif;font-size:1.5rem}}
+.tampon{{background:rgba(12,32,46,.80);backdrop-filter:blur(10px);border:1px solid rgba(251,243,228,.20);border-left:4px solid rgba(232,160,90,.5);
+ border-radius:10px;padding:.7rem 1rem;margin:.5rem 0;font-size:.92rem;line-height:1.55;color:#fbf3e4;box-shadow:0 4px 16px rgba(0,0,0,.3)}}
+.tampon b{{color:#fbf3e4;font-size:1rem}}
+.tampon .meta{{color:#fbf3e4;opacity:.75}}
+.tampon a{{color:#f2b878!important;text-decoration:underline;text-underline-offset:3px}}
+.tampon a:hover{{color:#fff!important}}
+.tampon.cite{{background:rgba(184,67,47,.38);border-color:rgba(232,160,90,.7);border-left:4px solid #e8a05a}}
+.rtl{{direction:rtl;font-family:Amiri,serif;font-size:1.5rem}}
 </style>"""
 
 
@@ -124,5 +128,11 @@ with right:
                 if {"no_citation", "weak_grounding"} & set(r["warnings"]): st.warning("Réponse à vérifier : citations faibles ou information absente des passages.")
             st.markdown("##### Tampons — sources")
             for s in r["sources"]:
-                st.markdown(f"<div class='tampon {'cite' if s['cited'] else ''}'><b>[{s['id']}] {s['title']}</b> · {s['region']} · {THEMES.get(s['theme'], s['theme'])}<br>"
-                            f"<a href='{s['url']}' target='_blank'>{s['source']}</a> · {s['license']}</div>", unsafe_allow_html=True)
+                badge = " ✓ cité" if s["cited"] else ""
+                st.markdown(
+                    f"<div class='tampon {'cite' if s['cited'] else ''}'>"
+                    f"<b>[{s['id']}] {s['title']}</b>{badge}<br>"
+                    f"<span class='meta'>{s['region']} · {THEMES.get(s['theme'], s['theme'])}</span><br>"
+                    f"<a href='{s['url']}' target='_blank'>{s['source']}</a> "
+                    f"<span class='meta'>· {s['license']}</span></div>",
+                    unsafe_allow_html=True)
